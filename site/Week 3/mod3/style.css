@@ -1,0 +1,43 @@
+nav {
+	background-color: gray;
+}
+
+h1 {
+	font-weight: 550;
+	color: black;
+}
+
+ul {
+	background-color: white;
+	border: 1px solid black;
+}
+
+li {
+	border: 1px solid black;
+}
+
+h2 {
+	font-weight: 550;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.row{
+	background-color: gray;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#hee{
+	font-size: 1.2em;
+	font-weight: 540;
+}
+
+
+@media(max-width: 576px){
+	.row{
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+}

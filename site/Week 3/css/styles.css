@@ -1,4 +1,276 @@
-.row{
-	background-color: gray;
-	border: 1px solid red;
+body{
+	color: black;
+	background-color: #fffdd0;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #800000;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand span{
+	font-size: 0.7em;
+	color: #800000;
+}
+.navbar-brand a:hover, .navbar-brand a:focus, .nav-item a:hover ,.nav-item a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand p{
+	color: #000;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	margin-top: 15px;
+}
+
+#nav-list{
+	margin-top:10px;
+}
+
+#nav-list a{
+	color: #951C49;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background: #E7E7E7;
+}
+
+#nav-list a:span{
+	font-size:1.8em;
+}
+
+.navbar button.navbar-toggler, navbar-toggler-icon{
+	border: 1px solid #61122f;
+	margin-top:-30px;
+}
+
+.container .jumbotron{
+	padding: 0;
+	box-shadow: 0 0 50px #800000;
+	border: 2px solid #800000;
+}
+
+#live-matches,#puzzles,#create-game{
+	height: 200px;
+	width: 200px;
+	margin: 0px auto 15px auto;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	background: url('../chess_puzzle.png') no-repeat center;
+}
+
+#live-matches:hover, #puzzles:hover, #create-game:hover{
+	box-shadow: 0 1px 50px 1px #cccccc
+}
+
+#live-matches span, #puzzles span, #create-game span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.5;
+}
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #800000;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+
+#hours > span, #address > span{
+	font-size: 1.3em;
+}
+
+#address p{
+	color: #557c3e;
+	font-size: 0.8em;
+	line-height: 1.8;
+}
+
+#testimonials{
+	font-style: italic;
+}
+
+div > section{
+	color: white;
+	font-size: 0.8em;
+}
+
+hr{
+	border: 1px solid white;
+}
+
+/***********Menu-Categories Start here***********/
+
+.category-tile{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width: 150px;
+	height: 100px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.8;
+}
+
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title +div{
+	margin-bottom: 50px;
+}
+
+/********end of new-game.html**********/
+.menu-item-tile{
+	margin-bottom: 25px;
+	color: black;
+}
+
+.menu-item-tile hr{
+	width: 80%;
+	border: 1px solid black;
+}
+
+.menu-item-tile .menu-item-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-right: -15px;
+	margin-top: -15px;
+}
+
+.menu-item-tile .menu-item-price span{
+	font-size: 0.8em;
+}
+
+.menu-item-photo{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 150px;
+}
+
+.menu-item-photo div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+
+.menu-item-description{
+	padding-right: 30px;
+}
+
+h3.menu-item-title{
+	margin: 0 0 10px;
+}
+
+.menu-item-details{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+@media(min-width: 1200px){
+	#logo-img{
+		width:150px;
+		height: 60px;
+	}
+	.container .jumbotron{
+		background: url(chess.jpg) no-repeat;
+	}
+}
+@media(min-width: 992px) and (max-width: 1199px){
+	#logo-img{
+		width: 120px;
+		height: 48px;
+	}
+	.container .jumbotron{
+		background: url(chess_992.jpg) no-repeat;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	#logo-img{
+		width: 80px;
+		height: 30px;
+	}
+	.container .jumbotron{
+		background: url(chess_768.jpg) no-repeat;
+	}
+}
+
+@media(max-width: 767px){
+	#logo-img{
+		display: none;
+	}
+	.navbar-brand h1{
+		font-size: 5vw;
+	}
+	.navbar-brand span{
+		font-size: 2.5vw;
+	}
+	.container .jumbotron{
+		background: url(chess_0.jpg) no-repeat;
+	}
+}
+
+@media(max-width: 576px) and (min-width: 351px){
+	.col-xs-6{
+		position: relative;
+		width: 50%;
+	}
+	.menu-item-photo{
+		margin-right: auto;
+	}
+	.menu-item-tile .menu-item-price{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+}
+
+@media(max-width: 350px)
+{
+	.col-xxs-12{
+		position: relative;
+		width: 100%;
+	}
 }

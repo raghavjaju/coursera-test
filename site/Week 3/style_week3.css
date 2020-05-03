@@ -10,3 +10,10 @@ body{
 	border-radius: 0;
 	border: 0;
 }
+
+#logo-img{
+	background-image: url("lavanya.jpg");
+	width: 150px;
+	height: 84px;
+	margin: 10px 15px 10px 0px;
+}
