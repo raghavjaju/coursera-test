@@ -1,3 +1,9 @@
+#navbarToggle:focus{
+	box-shadowr: 10px;
+	background-color: gray;
+}
+
+
 body{
 	color: black;
 	background-color: #fffdd0;
